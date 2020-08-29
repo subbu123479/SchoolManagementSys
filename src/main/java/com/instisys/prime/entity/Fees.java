@@ -17,6 +17,20 @@ public class Fees {
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     private Long id;
+    @Column(name="fee_name")
+    private String feeName;
+
+    @Column(name="school_id")
+    private String schoolId;
+
+    @Column(name="user_id")
+    private String userId;
+
+    @Column(name="fee_amt")
+    private Long feeAmount;
+
+    @Column(name="paid_on")
+    private Date paidOn;
 
     @Column(name="date_created")
     private Date createdOn;

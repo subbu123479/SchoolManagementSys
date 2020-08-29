@@ -17,6 +17,17 @@ public class User {
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     private Long id;
+    @Column(name="user_name")
+    private String userName;
+
+    private String email;
+
+    private String password;
+
+    private String role;
+
+     private Boolean active;
+
 
 
 
@@ -25,4 +36,6 @@ public class User {
 
     @Column(name="last_updated")
     private Date updatedOn;
+
+
 }

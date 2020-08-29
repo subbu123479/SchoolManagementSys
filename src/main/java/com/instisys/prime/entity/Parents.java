@@ -18,6 +18,16 @@ public class Parents {
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     private Long id;
 
+    private String name;
+
+    private String email;
+
+    @Column(name="mobile_no")
+    private Long mobileNo;
+
+    @Column(name="std_name_studying")
+    private String stdNameStudying;
+
     @Column(name="date_created")
     private Date createdOn;
 

@@ -10,6 +10,7 @@ import org.springframework.data.rest.webmvc.config.RepositoryRestConfigurer;
 
 
 @Configuration
+
 public class RepositoryConfig implements RepositoryRestConfigurer{
 	
 	@Autowired

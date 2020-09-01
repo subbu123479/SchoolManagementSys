@@ -26,10 +26,7 @@ public class User {
 
     private String role;
 
-     private Boolean active;
-
-
-
+    private Boolean active;
 
     @Column(name="date_created")
     private Date createdOn;

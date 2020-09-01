@@ -5,9 +5,10 @@ import com.instisys.prime.entity.Student;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
+import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
 import java.util.List;
-
+@RepositoryRestResource(collectionResourceRel="faculty", path="faculty")
 public interface FacultyRepository extends JpaRepository<Faculty, Long> {
 
     @Query("FROM Faculty f WHERE f.standard =:standard and f.section=:section")

@@ -22,7 +22,7 @@ public class Faculty {
     @Column(name="faculty_name")
     private String facultyName;
 
-    @Column(name="user_id")
+    @Column(name="class_name")
     private String className;
 
     @Column(name="class_id")

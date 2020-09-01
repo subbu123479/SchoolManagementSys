@@ -15,7 +15,8 @@ public interface StudentRepository extends JpaRepository<Student, Long> {
 
     @Query("FROM Student s WHERE s.standard =:standard and s.section=:section")
     List<Student> findByStandardAndSection(@Param("standard") String standard, @Param("section") String section);
-@Query("select s from Student s join Leave s1 on s.stdName = s1.studentName")
+
+    @Query("select s from Student s join Leave s1 on s.stdName = s1.studentName")
     List<Student> findAllByStdName();
 
     @Query("FROM Student s WHERE  s.currentAddress=:current_address")

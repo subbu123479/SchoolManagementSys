@@ -27,9 +27,10 @@ public interface BookRepository extends JpaRepository<Book, Long>{
 	Page<Book> findByNameContaining(@Param("name") String keyword, Pageable pageable);
 
 	@Query("FROM Book b WHERE b.active = true")
-	List<Book> findByActive(@Param("active") String active);
+	List<Book> findByActive();
 
 	@Query("FROM Book b WHERE b.unitsInStock > 0 and b.active = true")
 	List<Book> findByUnitsInStockAndActive();
+
 
 }
